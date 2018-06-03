@@ -5,7 +5,9 @@ public class Matrix<T> {
     ArrayList<Integer> size;
 
     Matrix() {
+        // Элементы матрицы
         this.data = new ArrayList<T> ();
+        // Размеры матрицы по каждому измерению. Первый элемент - размер строки, второй - размер столбца, а дальше третьего измерения и тд
         this.size = new ArrayList<Integer> ();
     }
 

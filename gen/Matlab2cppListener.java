@@ -117,6 +117,16 @@ public interface Matlab2cppListener extends ParseTreeListener {
 	 */
 	void exitOnes(Matlab2cppParser.OnesContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link Matlab2cppParser#eye}.
+	 * @param ctx the parse tree
+	 */
+	void enterEye(Matlab2cppParser.EyeContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link Matlab2cppParser#eye}.
+	 * @param ctx the parse tree
+	 */
+	void exitEye(Matlab2cppParser.EyeContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link Matlab2cppParser#line}.
 	 * @param ctx the parse tree
 	 */

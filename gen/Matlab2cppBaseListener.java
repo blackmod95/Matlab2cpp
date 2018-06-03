@@ -147,6 +147,18 @@ public class Matlab2cppBaseListener implements Matlab2cppListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterEye(Matlab2cppParser.EyeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitEye(Matlab2cppParser.EyeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterLine(Matlab2cppParser.LineContext ctx) { }
 	/**
 	 * {@inheritDoc}
