@@ -57,25 +57,135 @@ public interface Matlab2cppListener extends ParseTreeListener {
 	 */
 	void exitInit_matrix(Matlab2cppParser.Init_matrixContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link Matlab2cppParser#unary_operation}.
+	 * Enter a parse tree produced by {@link Matlab2cppParser#matrices}.
 	 * @param ctx the parse tree
 	 */
-	void enterUnary_operation(Matlab2cppParser.Unary_operationContext ctx);
+	void enterMatrices(Matlab2cppParser.MatricesContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link Matlab2cppParser#unary_operation}.
+	 * Exit a parse tree produced by {@link Matlab2cppParser#matrices}.
 	 * @param ctx the parse tree
 	 */
-	void exitUnary_operation(Matlab2cppParser.Unary_operationContext ctx);
+	void exitMatrices(Matlab2cppParser.MatricesContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link Matlab2cppParser#binary_operation}.
+	 * Enter a parse tree produced by {@link Matlab2cppParser#lvalue}.
 	 * @param ctx the parse tree
 	 */
-	void enterBinary_operation(Matlab2cppParser.Binary_operationContext ctx);
+	void enterLvalue(Matlab2cppParser.LvalueContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link Matlab2cppParser#binary_operation}.
+	 * Exit a parse tree produced by {@link Matlab2cppParser#lvalue}.
 	 * @param ctx the parse tree
 	 */
-	void exitBinary_operation(Matlab2cppParser.Binary_operationContext ctx);
+	void exitLvalue(Matlab2cppParser.LvalueContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link Matlab2cppParser#set_item}.
+	 * @param ctx the parse tree
+	 */
+	void enterSet_item(Matlab2cppParser.Set_itemContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link Matlab2cppParser#set_item}.
+	 * @param ctx the parse tree
+	 */
+	void exitSet_item(Matlab2cppParser.Set_itemContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link Matlab2cppParser#item}.
+	 * @param ctx the parse tree
+	 */
+	void enterItem(Matlab2cppParser.ItemContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link Matlab2cppParser#item}.
+	 * @param ctx the parse tree
+	 */
+	void exitItem(Matlab2cppParser.ItemContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link Matlab2cppParser#section}.
+	 * @param ctx the parse tree
+	 */
+	void enterSection(Matlab2cppParser.SectionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link Matlab2cppParser#section}.
+	 * @param ctx the parse tree
+	 */
+	void exitSection(Matlab2cppParser.SectionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link Matlab2cppParser#row}.
+	 * @param ctx the parse tree
+	 */
+	void enterRow(Matlab2cppParser.RowContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link Matlab2cppParser#row}.
+	 * @param ctx the parse tree
+	 */
+	void exitRow(Matlab2cppParser.RowContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link Matlab2cppParser#column}.
+	 * @param ctx the parse tree
+	 */
+	void enterColumn(Matlab2cppParser.ColumnContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link Matlab2cppParser#column}.
+	 * @param ctx the parse tree
+	 */
+	void exitColumn(Matlab2cppParser.ColumnContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link Matlab2cppParser#equation}.
+	 * @param ctx the parse tree
+	 */
+	void enterEquation(Matlab2cppParser.EquationContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link Matlab2cppParser#equation}.
+	 * @param ctx the parse tree
+	 */
+	void exitEquation(Matlab2cppParser.EquationContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link Matlab2cppParser#rvalue}.
+	 * @param ctx the parse tree
+	 */
+	void enterRvalue(Matlab2cppParser.RvalueContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link Matlab2cppParser#rvalue}.
+	 * @param ctx the parse tree
+	 */
+	void exitRvalue(Matlab2cppParser.RvalueContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link Matlab2cppParser#term}.
+	 * @param ctx the parse tree
+	 */
+	void enterTerm(Matlab2cppParser.TermContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link Matlab2cppParser#term}.
+	 * @param ctx the parse tree
+	 */
+	void exitTerm(Matlab2cppParser.TermContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link Matlab2cppParser#u_ops}.
+	 * @param ctx the parse tree
+	 */
+	void enterU_ops(Matlab2cppParser.U_opsContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link Matlab2cppParser#u_ops}.
+	 * @param ctx the parse tree
+	 */
+	void exitU_ops(Matlab2cppParser.U_opsContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link Matlab2cppParser#lb_ops}.
+	 * @param ctx the parse tree
+	 */
+	void enterLb_ops(Matlab2cppParser.Lb_opsContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link Matlab2cppParser#lb_ops}.
+	 * @param ctx the parse tree
+	 */
+	void exitLb_ops(Matlab2cppParser.Lb_opsContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link Matlab2cppParser#hb_ops}.
+	 * @param ctx the parse tree
+	 */
+	void enterHb_ops(Matlab2cppParser.Hb_opsContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link Matlab2cppParser#hb_ops}.
+	 * @param ctx the parse tree
+	 */
+	void exitHb_ops(Matlab2cppParser.Hb_opsContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link Matlab2cppParser#matrix}.
 	 * @param ctx the parse tree
